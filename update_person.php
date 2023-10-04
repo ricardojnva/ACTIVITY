@@ -86,7 +86,7 @@ $Email_Address = "Email_Address";
 
 <?php
 
-if(isset($_POST['update_person']))
+if (array_key_exists('add_Student',$_POST))
 {
     $Person_ID = isset($_POST['Person_ID']) ? mysqli_real_escape_string($con, $_POST['Person_ID']) : "";
 
